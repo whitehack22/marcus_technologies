@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin"
+    android:background="@drawable/loginbground2">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="179dp"
+        android:layout_height="201dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/applogo">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/welcome_to_marcus_tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/welcome_to_marcus_tech"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/app_logo">
+ </TextView>
+
+    <Button
+        android:id="@+id/user_login_btn"
+        android:layout_width="245dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/welcome_to_marcus_tech"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/login_as_user"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/admin_login_btn"
+        android:layout_width="245dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/user_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/login_as_administrator"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserEditProfile"
+    android:background="@drawable/loginbground2">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="144dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/applogo"></ImageView>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editProfile"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275">
+
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="183dp"
+            android:layout_height="110dp"
+            android:contentDescription="@string/Profile_photo"
+            app:srcCompat="@drawable/user_icon">
+
+        </ImageView>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editEmailAddress"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailAddress"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Phone_number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="@string/save"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="157dp"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="20dp"
+        android:text="@string/Edit_profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
